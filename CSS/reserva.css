@@ -1,0 +1,193 @@
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+--cor-branco:#FFFFFF;
+--cor-cinza-escuro:#222831;
+--cor-cinza:#393E46;
+--cor-amarelo:#FFD369;
+}
+
+
+
+
+html{
+    font-size:62.5%;
+    color:var(--cor-branco);
+}
+
+body{
+    background-color:#393E46;
+    font-size:1.6rem;
+}
+
+img{
+    max-width:100%;
+
+}
+
+header{
+    height:720px;
+
+
+}
+
+@font-face {
+    font-family: Rochester;
+    src: url(/Fontes/Rochester-Regular.ttf);
+}
+
+h2{
+    font-family: Rochester,arial,sans-serif;
+    color:#FFD369;
+}
+
+#banner-apresentacao{
+    max-width:1140px;
+    width:85%;
+    margin:0 auto;
+    height:620px;
+}
+
+header .menu-principal{
+    width:35%;
+    height:5%;
+    align-items: center;
+}
+
+header .menu-principal > ul{
+    display:flex;
+    justify-content: space-between;
+    list-style:none; 
+    color: #FFFFFF;
+    font-size:3rem;
+}
+
+header .menu-principal a{
+    color:#FFFFFF;
+    text-decoration-line: none;
+}
+
+li{ 
+    padding-left: 0.6rem;
+    padding-right: 1rem;
+    border-right-style: solid;
+    border-right-width: 0.1rem;
+}
+
+header .menu-principal a:hover,
+header .menu-principal a.atual{
+    color:var(--cor-amarelo);
+}
+
+.background{
+    image-resolution: 30rem 15rem;
+    position:absolute;
+    
+
+
+}
+
+#logo-principal{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+  }
+
+  main .apresentacao{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 1fr ;
+    grid-template-areas:"titulo titulo"
+                        "texto imagem";
+                         
+
+}
+
+main #banner-apresentacao{
+    grid-area:imagem;
+
+}
+
+main #apresentacao-texto{
+    grid-area:texto;
+    font-size:2.5rem;
+}
+#inicio-apresentacao{
+    grid-area:titulo;
+    font-size:4rem;
+    text-align:center;
+}
+
+.conteiner{
+ display:flex;
+font-size:2rem;
+}
+
+#contatos-titulo{
+    text-align:center;
+    font-size:5rem;
+    padding-bottom:5rem;
+
+
+}
+
+#contatos-logo{
+    margin-left:auto;
+    margin-right:auto;
+
+
+}
+#titulo{
+    padding-left:35px;
+    padding-bottom:20px;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+#topo{
+    margin-top:22px;
+}
+
+h1{
+    text-align:center;
+    font-family:Rochester,Arial, Sans-serif;
+    color:var(--cor-amarelo);
+    font-size:5rem;
+    margin-bottom:5rem;
+}
+
+label{
+    padding-right:auto;
+    padding-left:auto;
+
+}
+form{
+    margin:2rem;
+    max-width:600px;
+    margin:2rem auto;
+
+
+}
+
+.form{
+    margin:1.5rem 0;
+}
+
+input, select, textarea{
+    width:100%;
+
+}
+
+btn{
+    width:15%
+
+}
